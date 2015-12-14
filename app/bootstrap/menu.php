@@ -11,7 +11,7 @@ MenuWithAuthentication::menu()
     ->title('Home')
     ->icon('fa-dashboard')
     ->url('/home')
-    ->rol('home')
+    ->role('home')
     ->permission('home')
     ->user('sergi pineda');
 
