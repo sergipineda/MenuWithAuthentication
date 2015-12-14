@@ -4,6 +4,7 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
+    "zizaco/entrust": "dev-laravel-5",
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*",
@@ -51,4 +52,5 @@
     "config": {
         "preferred-install": "dist"
     }
+
 }

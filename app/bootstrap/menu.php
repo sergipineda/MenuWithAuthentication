@@ -6,29 +6,33 @@
 //Té submenus
 
 
+
 //home
-MenuWithAuthentication::menu()
+use MenuWithAuthentication\MenuWithAuthentication;
+
+MenuWithAuthentication::menu('home')
     ->title('Home')
     ->icon('fa-dashboard')
     ->url('/home')
     ->role('home')
     ->permission('home')
-    ->user('sergi pineda');
+    ->user('sergipineda@iesebre.com');
 
 //Another link
 
-MenuWithAuthentication::menu()
+MenuWithAuthentication::menu('anotherlink')
     ->title('Another Link')
     ->user(5);
 
 //Menu Multileve
 
-MenuWithAuthentication::menu()->title('Multilevel')->icon('fa-credit-card');
-  MenuWithAuthentication::menu()->title('Link in level 2')->icon('fa-briefcase');
-  MenuWithAuthentication::menu()->title('Link in level 2')->icon('fa-user');
+MenuWithAuthentication::menu('multi')->title('Multilevel')->icon('fa-credit-card');
+  MenuWithAuthentication::menu('link2')->title('Link in level 2')->icon('fa-briefcase');
+  MenuWithAuthentication::menu('link3')->title('Link in level 2')->icon('fa-user');
 
-MenuWithAuthentication::menu()
+MenuWithAuthentication::menu('link')
     ->title('Últim menú')
     ->icon('fa-dashboard')
     ->url('http://www.google.es');
 
+//$menuHome = MenuWithAuthentication\::menu('home');

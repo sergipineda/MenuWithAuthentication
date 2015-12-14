@@ -147,6 +147,7 @@ return [
         Acacha\AdminLTETemplateLaravel\app\Providers\AdminLTETemplateServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
+        //'Zizaco\Entrust\EntrustServiceProvider'
     ],
 
     /*
@@ -194,6 +195,7 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+        //'Entrust' => 'Zizaco\Entrust\EntrustFacade'
 
     ],
 
