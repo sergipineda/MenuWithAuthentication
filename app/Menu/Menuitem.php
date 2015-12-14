@@ -20,7 +20,7 @@ class Menuitem
     /**
      * @var
      */
-    protected $rol;
+    protected $role;
     /**
      * @var
      */
@@ -83,7 +83,7 @@ class Menuitem
     }
 
     /**
-     * @param null $rol
+     * @param null $role
      * @return $this
      */
     public function role($role=null)
@@ -128,7 +128,14 @@ class Menuitem
 
     private function render()
     {
-        return "";
+        $data = array();
+        $data['url'] = $this->url;
+        $data['icon'] = $this->icon;
+        $data['permission'] = $this->permission;
+//        $data['role'] = $this->role;
+//        $data['user'] = $this->user;
+//        $data['title'] = $this->title;
+        return (String) view('menu.menuitem',$data);
     }
 
 }
